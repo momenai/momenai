@@ -1,5 +1,29 @@
 body{
     margin: 0;
     background: gray;
-    text-align: center;
+    /* text-align: center; */
+}
+H2 { text-align: center }
+H1 { text-align: center }
+P { text-align: left }
+
+.column {
+  float: left;
+  /* padding: 10px; */
+  height: 1000px; 
+}
+
+.left, .right {
+  width: 10%;
+}
+
+.middle {
+  width: 80%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
