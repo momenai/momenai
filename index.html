@@ -1,156 +1,204 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Momen</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!--Montserrat font-->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css" />
-    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
-  </head>
-  <body>   
-    <section>
-      <!-- MOBILE NAVIGATION -->
-      <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
-        <a href="#home" class="w3-bar-item w3-button w3-hover-none"></a>
-        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
-      </div>
-      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
-        <a href="#about" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">ABOUT</a>
-        <a href="#experience" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">Experience</a>
-        <a href="#projects" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">project</a>
-        <a href="#certifications" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">Certifications</a>
-        <a href="#blog" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">Blog</a>
-        <a href="#contact" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">CONTACT</a>
-      </div>
-           <!-- SOCIAL SECTION -->
-           <section class="image-section w3-quarter w3-fixed w3-padding-small">
-          </div></div>
-          </section>
 
-      <!--CV CONTENT SECTION-->
-      <section class="w3-threequarter w3-padding-large w3-right">
-        <!--DESKTOP NAVIGATION-->
-        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
-          <!-- <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green"> <h1>Mohammed Momen</h1></a> -->
-          <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
-          <a href="#blog" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">Blog</a>
-          <a href="#certifications" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">Certifications</a>
-          <a href="#projects" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">projects</a>
-          <a href="#experience" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">experience</a>
-          <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">ABOUT</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Momen</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!--Montserrat font-->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+</head>
+
+<body>
+  <section>
+    <!-- MOBILE NAVIGATION -->
+    <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+      <a href="#home" class="w3-bar-item w3-button w3-hover-none"></a>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+        onclick="toggleNavigation()">&#9776;</a>
+    </div>
+    <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+      <a href="#about"
+        class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green"
+        onclick="toggleNavigation()">ABOUT</a>
+      <a href="#experience"
+        class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green"
+        onclick="toggleNavigation()">Experience</a>
+      <a href="#projects"
+        class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green"
+        onclick="toggleNavigation()">project</a>
+      <a href="#certifications"
+        class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green"
+        onclick="toggleNavigation()">Certifications</a>
+      <a href="#blog"
+        class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green"
+        onclick="toggleNavigation()">Blog</a>
+      <a href="#contact"
+        class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green"
+        onclick="toggleNavigation()">CONTACT</a>
+    </div>
+    <!-- SOCIAL SECTION -->
+    <section class="image-section w3-quarter w3-fixed w3-padding-small">
+      </div>
+      </div>
+    </section>
+
+    <!--CV CONTENT SECTION-->
+    <section class="w3-threequarter w3-padding-large w3-right">
+      <!--DESKTOP NAVIGATION-->
+      <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+        <!-- <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green"> <h1>Mohammed Momen</h1></a> -->
+        <a href="#contact"
+          class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small"
+          style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
+        <a href="#blog"
+          class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small"
+          style="border-width: 2px !important;" onclick="toggleNavigation()">Blog</a>
+        <a href="#certifications"
+          class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small"
+          style="border-width: 2px !important;" onclick="toggleNavigation()">Certifications</a>
+        <a href="#projects"
+          class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small"
+          style="border-width: 2px !important;" onclick="toggleNavigation()">projects</a>
+        <a href="#experience"
+          class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small"
+          style="border-width: 2px !important;" onclick="toggleNavigation()">Experience</a>
+        <a href="#about"
+          class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small"
+          style="border-width: 2px !important;" onclick="toggleNavigation()">About</a>
+      </div>
+      <div class="content-container w3-margin-top-2">
+        <!--HOME SECTION-->
+        <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+
+          <h1>Mohammed Momen</h1>
+          <h2>Data Engineer</h2>
+          <p style="font-style: italic; font-size:x-large;">"Data-intensive science is new way of doing science" Me
+          </p>
+          <img src="images/profile.png" alt="Avatar" style="width:200px">
+
+
+
+          <p></p>
         </div>
-        <div class="content-container w3-margin-top-2">
-          <!--HOME SECTION-->
-          <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
 
-            <h1>Mohammed Momen</h2>
-            <h2>Data Engineer</h2>
-              <p style="font-style: italic; font-size:x-large;">"Data-intensive science is new way of doing science"</p>
+        <!--ABOUT SECTION-->
+        <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+          <h2 class=" w3-padding-large w3-border-bottom ">Summary</h2>
+          <p class="w3-margin-top-3">
+            My name is Mohamemd Momen and I am interested in data engineering, machine learning engineering and
+            distributed system for both batch processing and streaming processing using Kafka and Spark
+          </p>
+          <p class="">
+            I studied computer engineering at Hacettepe university in Ankara -Turkey.
+          </p>
+          <p class="">
+            I have worked as Flutter developer, python developer with Djanog and MySQL.
+          </p>
+        </div>
 
-            <p></p>
-          </div>
+        <!--experience SECTION-->
+        <div id="experience" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+          <h2 class="w3-container w3-padding-large w3-border-bottom w3-hide-small">Experience</h3>
+            <div class="w3-margin-top-2" style="font-weight: 500;">
+              <p>experience</p>
+              <p>experience</p>
+              <p>experience</p>
+              <p>experience</p>
 
-          <!--ABOUT SECTION-->
-          <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
-            <h2 class="w3-container w3-padding-large w3-border-bottom w3-hide-small">ABOUT</h2>
-            <p class="w3-margin-top-2"> 
-              My name is Mohamemd Momen and I am interested in data engineering, machine learning engineering and distributed system. 
-            </p>
-            <p class=""> 
-              I studied computer engineering at Hacettepe university in Ankara -Turkey. 
-            </p>
-            <p class=""> 
-             I am intersted in batch processing and streaming processing using Kafka and Spark. 
-            </p>
-          </div>
-          
-            <!--experience SECTION-->
-            <div id="experience" class="w3-container w3-margin-top-20-percent w3-cursive">
-              <h2 class="w3-container w3-padding-large" >Experience</h3>
-              <div class="w3-margin-top-2" style="font-weight: 500;">
-                <p>experience</p>
-                <p>experience</p>
-                <p>experience</p>
-                <p>experience</p>
-          
-              </div>
             </div>
-              <!--Blog SECTION-->
-          <div id="projects" class="w3-container w3-margin-top-20-percent w3-cursive">
-            <h2 class="          w3-container w3-padding-large w3-border-bottom w3-hide-small">Projects</h3>
+        </div>
+        <!--Skills SECTION-->
+        <div id="experience" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+          <h2 class="w3-container  w3-border-bottom w3-hide-small">Skills</h3>
+            <div class="w3-margin-top-2" style="font-weight: 500;">
+              <p>Langauges: Python, Java, Dart, C</p>
+              <p>Software engineering: OOP, Deisgin patterns, Agile</p>
+              <p>Machine learning: Classification, Regression, Artificial Neural Network</p>
+              <p>Data engineering: Data Collection, ETL, Data Modeling, Data procesing, data visualization, Spark, Kafka
+              </p>
+              <p></p>
+
+            </div>
+        </div>
+        <!--Blog SECTION-->
+        <div id="projects" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+          <h2 class=" w3-container w3-padding-large w3-border-bottom w3-hide-small">Projects</h3>
             <div class="w3-margin-top-2" style="font-weight: 500;">
               <p>project 1</p>
               <p>projects 2</p>
               <p>project 3</p>
               <p>projects 4</p>
-        
+
             </div>
-          </div>
-            <!--Blog SECTION-->
-            <div id="certifications" class="w3-container w3-margin-top-20-percent w3-cursive">
-              <h2 class=" w3-container w3-padding-large w3-border-bottom w3-hide-small">My certifications</h3>
-              <div class="w3-margin-top-2" style="font-weight: 500;">
-                <p>certifications1</p>
-                <p>certifications2</p>
-                <p>certifications3</p>
-              </div>
-            </div>
-    <!--Blog SECTION-->
-          <div id="blog" class="w3-container w3-margin-top-20-percent w3-cursive">
-            <h2 class="w3-container w3-padding-large w3-border-bottom w3-hide-small">My Blogs</h3>
+        </div>
+        <!--Blog SECTION-->
+        <div id="certifications" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+          <h2 class=" w3-container w3-padding-large w3-border-bottom w3-hide-small">Certifications</h3>
             <div class="w3-margin-top-2" style="font-weight: 500;">
-              <p>Blog1</p>
-              <p>Blog2</p>
-              <p>Blog3</p>
-              <p>Blog4</p>
-        
+              <p>certifications1</p>
+              <p>certifications2</p>
+              <p>certifications3</p>
             </div>
-          </div>
-          
-          <!--CONTACT SECTION-->
-          <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
-            <h2 class="w3-container w3-padding-large w3-border-bottom w3-hide-small">Contact me</h3>
+        </div>
+        <!--Blog SECTION-->
+        <div id="blog" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+          <h2 class="w3-container w3-padding-large w3-border-bottom w3-hide-small">Blogs</h3>
+            <div class="w3-margin-top-2" style="font-weight: 500;">
+              <p>Introduction to Data engineering</p>
+              <p>Distributed System</p>
+              <p>Why Data engineering is Essential for any Machine learning project </p>
+              <p> Data-Intensive Applications - A Long Review of the book</p>
+
+            </div>
+        </div>
+
+        <!--CONTACT SECTION-->
+        <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
+          <h2 class="w3-container w3-padding-large w3-border-bottom w3-hide-small">Contact me</h3>
             <div class="w3-margin-top-2" style="font-weight: 500;">
               <p>Harbiye mah, Hürriyet caddesi çankaya/Ankara</p>
               <p>Phone number: +90 5xxxxxxxx</p>
               <p>E-mail: mmomen574@email.com</p>
-        
+
             </div>
-          </div>
-          
-     
-        
+        </div>
+
+
+
 
         <!--FOOTER-->
         <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
         <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
           <p>© 2022 - Mohammed Momen</p>
-        <!-- End footer -->
+          <!-- End footer -->
         </footer>
 
         <!--END OF CV SECTION-->
-      </section>      
     </section>
-    <script>
-      // Function to toggle mobile navigation
-      function toggleNavigation() {
-        let nav = document.getElementById("mobile-nav");
-        if (nav.classList.contains('w3-show')) {
-          nav.classList.remove('w3-show');
-        } else { 
-          nav.classList.add('w3-show');
-        }
+  </section>
+  <script>
+    // Function to toggle mobile navigation
+    function toggleNavigation() {
+      let nav = document.getElementById("mobile-nav");
+      if (nav.classList.contains('w3-show')) {
+        nav.classList.remove('w3-show');
+      } else {
+        nav.classList.add('w3-show');
       }
-    </script>
-    <script>
-      // Script to load feather icons
-      feather.replace()
-    </script>
-  </body>
+    }
+  </script>
+  <script>
+    // Script to load feather icons
+    feather.replace()
+  </script>
+</body>
+
 </html>
