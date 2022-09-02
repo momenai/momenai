@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @momenai
-- 👀 I’m interested in Data engineering and Machine learning engineering
+- 👀 I’m interested in Data science, Data engineering and Machine learning engineering
 - 🌱 I’m currently learning kafak, spark, AWS
 - 📫 How to reach me On twitter @momen_ai
 
