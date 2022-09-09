@@ -11,6 +11,7 @@ p.round2 {
   border-radius: 8px;
   padding: 5px;
   width: 220px;
+  background-color: rgb(238, 237, 237);
 }
 p.outset {border-style: outset;}
 
